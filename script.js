@@ -374,8 +374,8 @@ function getCatorie1(){
         );
     console.log(newarr);
 }
-function sortFoodByProtein(foodArray) {
-    return foodArray.slice().sort((a, b) => b.protiens - a.protiens);
+function sortFoodByProtein(foodOriginalData) {
+    return foodOriginalData.slice().sort((a, b) => b.protiens - a.protiens);
   }
   
   const sortedFoodByProtein = sortFoodByProtein(foodItems);
@@ -385,8 +385,8 @@ function sortFoodByProtein(foodArray) {
     console.log(`${index + 1}. ${food.foodname} - ${food.protiens}g of protein`);
   });
   
-  function sortFoodByCarbs(foodArray) {
-    return foodArray.slice().sort((a, b) => a.cab - b.cab);
+  function sortFoodByCarbs(foodOriginalData) {
+    return foodOriginalData.slice().sort((a, b) => a.cab - b.cab);
   }
   
   const sortedFoodByCarbs = sortFoodByCarbs(foodOriginalData);
